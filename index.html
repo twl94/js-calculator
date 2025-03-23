@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>JSCaculator - twl94</title>
+</head>
+<body>
+    
+    <div class="container">
+        <input type="text" id="input-box" autocomplete="off" disabled>
+
+        <div class="buttons">
+            <div class="button-area">
+                <button onclick="appendToDisplay('all-clear')" class="red">C</button>
+                <button onclick="appendToDisplay('+')" class="yellow">+</button>
+                <button onclick="appendToDisplay('-')" class="yellow">-</button>
+                <button onclick="appendToDisplay('*')" class="yellow">X</button>
+            </div>
+            <div class="button-area">
+                <button onclick="appendToDisplay(7)">7</button>
+                <button onclick="appendToDisplay(4)">4</button>
+                <button onclick="appendToDisplay(1)">1</button>
+                <button onclick="appendToDisplay(0)">0</button>
+            </div>
+            <div class="button-area">
+                <button onclick="appendToDisplay(8)">8</button>
+                <button onclick="appendToDisplay(5)">5</button>
+                <button onclick="appendToDisplay(2)">2</button>
+                <button onclick="appendToDisplay('.')">.</button>
+            </div>
+            <div class="button-area">
+                <button onclick="appendToDisplay(9)">9</button>
+                <button onclick="appendToDisplay(6)">6</button>
+                <button onclick="appendToDisplay(3)">3</button>
+                <button onclick="getResult()" class="yellow">=</button>
+            </div>            
+            <div class="button-area un">
+                <button onclick="appendToDisplay('/')" class="yellow">/</button>
+            </div>
+            <div class="button-area">
+                <button onclick="toggleDarkMode()" class="yellow"><img src="/images/dark.png" width="15"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Made by twl94 - <a href="">Go to GitHub Repo</a>
+    </div>
+    <script src="/scripts/calculator.js"></script>
+    <script src="/scripts/darkModeToggle.js"></script>
+
+</body>
+</html>
